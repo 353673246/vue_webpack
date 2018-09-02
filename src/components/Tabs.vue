@@ -21,24 +21,24 @@
 <script>
 import className from '../style/app.scss'
 export default {
-  //template: '#tabs',
-  props:['leftItemsCount','filter','isHaveCompleted'],
-  data(){
+  // template: '#tabs',
+  props: ['leftItemsCount', 'filter', 'isHaveCompleted'],
+  data () {
     return {
-      states:['All', 'Active', 'Completed']
+      states: ['All', 'Active', 'Completed']
     }
   },
-  methods:{
-    toggleFilter(filter){
-      this.$emit('toggle-filter',filter)
+  methods: {
+    toggleFilter (filter) {
+      this.$emit('toggle-filter', filter)
     },
-    clearCompleted(){
+    clearCompleted () {
       this.$emit('clear-completed')
     }
   },
-  mounted(){
-    console.log(className);
-  },
+  mounted () {
+    console.log(className)
+  }
 }
 </script>
 

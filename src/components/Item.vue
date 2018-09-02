@@ -14,20 +14,20 @@
 </template>
 <script>
 export default {
-  name:'ItemComponent',
+  name: 'ItemComponent',
   // template: '#item',
   props: {
-    todo:{
+    todo: {
       type: Object,
       required: true
     }
   },
-  methods:{
-    handlerClick(){
-      this.$emit('change-completed',this.todo)
+  methods: {
+    handlerClick () {
+      this.$emit('change-completed', this.todo)
     },
-    deletTodo(){
-      this.$emit('delete-todo',this.todo)
+    deletTodo () {
+      this.$emit('delete-todo', this.todo)
     }
   }
 }
